@@ -1,0 +1,112 @@
+.bar1, .bar2, .bar3 {
+
+    width: 35px;
+    height: 5px;
+    background-color: #F5F5F5;
+    margin: 6px 0;
+    transition: 0.5s;
+  
+}
+  
+.change .bar1 {
+  
+    transform: translate(0, 11px) rotate(-45deg);
+  
+}
+  
+.change .bar2 {
+  
+    opacity: 0;
+    
+}
+  
+.change .bar3 {
+  
+    transform: translate(0, -11px) rotate(45deg);
+  
+}
+  
+.sidebar {
+  
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    background-color: #697e75;
+    overflow-x: hidden;
+    transition: width 0.5s ease-in-out; 
+    padding-top: 0px;
+    color: white;
+  
+}
+  
+.sidebar a {
+  
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f5f5f5;
+    display: block;
+    transition: 0.5s;
+  
+}
+  
+.sidebar .closebtn {
+  
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+  
+}
+  
+  
+.menubox:hover {
+  
+    background-color: #2d3632;
+  
+} 
+
+/*BURGER MENU STYLES*/
+.brg-icn {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1001;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #f1f1f1;
+}
+
+.side-menu.open {
+    width: 250px;
+}
