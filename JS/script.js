@@ -13,7 +13,7 @@ function toggleSidebar() {
     var sidebar = document.getElementById("sideBar");
     sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
   
-    var icon = document.querySelector('.bars');
+    var icon = document.querySelector('.menu-bars');
     icon.classList.toggle("change");
 }
 
@@ -21,9 +21,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop < 50) {
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("header").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("header").style.top = "0";
   }
 }
 

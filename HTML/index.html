@@ -9,29 +9,49 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
         <link rel="stylesheet" type="text/css" href="../CSS/sidebar.css">
-
         <script src="../JS/script.js"></script>
     </head>
     <body>
         <header class="header">
             <div class="top-nav">
                 <a class="title" href="index.html"><h1>Blog</h1></a>
-                <div class="bars" onclick="toggleSidebar()">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
             </div>
-            <!--<svg></svg>-->
-            <nav class="sub-nav">
-                <ul class="tp-br-ul">
-                    <li class="tp-br-li"><a class="header-link" href="./project_index.html" alt="Link to project index page">PROJECT INDEX</a></li>
-                    <li class="tp-br-li"><a class="header-link" href="./noContent.html">OTHER CONTENT</a></li>
-                    <li class="tp-br-li"><a class="header-link" href="./noContent.html">OTHER CONTENT</a></li>
-                    <li class="tp-br-li"><a class="header-link" href="./register.html" alt="Link to register page">REGISTER</a></li>
-                    <li class="tp-br-li"><a class="header-link" href="./login.html" alt="Link to login page">LOGIN</a></li>
-                </ul>
-            </nav>
+            <div class="sub-navbar">
+                <div class="bar-ctn">
+                    <div class="menu-bars" onclick="toggleSidebar()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="tp-br-ul">
+                        <li class="tp-br-li">
+                        </li>
+                        <li class="tp-br-li">
+                            <a class="header-link" href="./noContent.html">Gaming</a>
+                        </li>
+                        <li class="tp-br-li">
+                            <a class="header-link" href="./noContent.html">Nature</a>
+                        </li>
+                        <li class="tp-br-li">
+                            <a class="header-link" href="./noContent.html">Politics</a>
+                        </li>
+                        <li class="tp-br-li">
+                            <a class="header-link" href="./noContent.html">Sports</a>
+                        </li>
+                        <li class="tp-br-li">
+                            <a class="header-link" href="./noContent.html">IT</a>
+                        </li>
+                        <li class="tp-br-li">
+                            <a class="header-link" href="./noContent.html">Economy</a>
+                        </li>
+                        <li class="tp-br-li">
+                            <a class="header-link" href="./noContent.html">Fashion</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             <div class="sidebar" id="sideBar">
@@ -40,12 +60,19 @@
                         <a href="noContent.html" onclick="toggleSidebar()">ChatGPT-6</a>
                     </div>
                     <div class="menubox">
+                        <a  href="./login.html" onclick="toggleSidebar()" alt="Link to login page">LOGIN</a>
+                    </div>
+                    <div class="menubox">
+                        <a href="./register.html" onclick="toggleSidebar()"  alt="Link to register page">REGISTER</a>
+                    </div>
+                    <div class="menubox">
                         <a href="noContent.html" onclick="toggleSidebar()">No virus!</a>
+                    </div>
+                    <div class="menubox">
+                        <a href="./project_index.html" onclick="toggleSidebar()" alt="Link to project index page">PROJECT INDEX</a>
                     </div>
                 </div>
             </div>
-
-          <!-- <p>Content loading...</p> -->
         </main>
     </body>
 </html>
