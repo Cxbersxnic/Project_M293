@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 100vw;
+
+    background-color: #ffffff;
+    
+    z-index: 1000;
+    top: 0;
+    
+}
+
+.header-banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 80px;
+    width: 100%;
+    background-color: #E54B4B;
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+    z-index: 11;
+}
+
+/* Laptops & small desktops */
+@media (max-width: 1280px) {}
+
+/* Large desktops*/
+@media (max-width: 1440px) {}
+
+/* Mobile */
+@media (max-width: 480px) {}
+
+/* Tablets Portrait */
+@media (max-width: 768px) {}
+
+/* Tablets Landscape */
+@media (max-width: 1024px) {}
