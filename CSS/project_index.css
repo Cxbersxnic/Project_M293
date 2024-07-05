@@ -18,3 +18,8 @@
     float: left;
     font-size: 20px;
 }
+
+.description {
+    padding-left: 10px;
+    padding-top: 20px;
+}

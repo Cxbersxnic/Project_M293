@@ -4,19 +4,67 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>M293 Project</title>
-        <link rel="stylesheet" type="text/css" href="../CSS/form.css">
         <link rel="stylesheet" type="text/css" href="../CSS/project_index.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/header.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
+        <script src="../JS/script.js" defer></script>
     </head>
     <body>
-        <header>
-            <h1>--- M293 Project ---</h1>
-            <p>PROJECT INDEXPAGE</p>
-        </header>
+        <header class="header-wrapper">
+            <div class="header-banner">
+                <img src="../design/Logo.svg" class="logo"/>
+            </div>
+            <header class="header-wrapper">
+                <div class="filler"></div>
+                <div class="top-nav">
+                    <div class="logo-ctn">
+                        <a href="./index.html" class="logo-link"></a>  
+                        <img src="../public/Logo.png" class="logo"/>
+                    </div>
+                </div>
+                <div class="sub-nav">
+                    <div class="bar-ctn">
+                        <div class="menu-bars" onclick="toggleSidebar()">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                    <nav class="nav">
+                        <div class="tp-br-ul-wrapper">
+                            <ul class="tp-br-ul">
+                                <li class="tp-br-li"><a class="header-link" href="./noContent.html">Gaming</a></li>
+                                <li class="tp-br-li"><a class="header-link" href="./noContent.html">Nature</a></li>
+                                <li class="tp-br-li"><a class="header-link" href="./noContent.html">Politics</a></li>
+                                <li class="tp-br-li"><a class="header-link" href="./noContent.html">Sports</a></li>
+                                <li class="tp-br-li"><a class="header-link" href="./noContent.html">IT</a></li>
+                                <li class="tp-br-li"><a class="header-link" href="./noContent.html">Economy</a></li>
+                                <li class="tp-br-li"><a class="header-link" href="./noContent.html">Fashion</a></li>
+                                <li class="tp-br-li"><a class="header-link" href="./noContent.html">Lifestyle</a></li>
+                                <li class="tp-br-li"><a class="header-link" href="./noContent.html">Culture</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div class="sidebar" id="sideBar">
+                    <div class="ctn">
+                        <div class="menubox"><a href="noContent.html" onclick="toggleSidebar()">ChatGPT-6</a></div>
+                        <div class="menubox"><a href="./login.html" onclick="toggleSidebar()" alt="Link to login page">LOGIN</a></div>
+                        <div class="menubox"><a href="./register.html" onclick="toggleSidebar()" alt="Link to register page">REGISTER</a></div>
+                        <div class="menubox"><a href="noContent.html" onclick="toggleSidebar()">No virus!</a></div>
+                        <div class="menubox"><a href="./project_index.html" onclick="toggleSidebar()" alt="Link to project index page">PROJECT INDEX</a></div>
+                    </div>
+                </div>
         
-        <p>
-            Diese Website wurde als Projekt im Rahmen des Modul 293 von Melvin und Tristan erstellt.
-            Sie dient als ein Beweis unserer HTML-, CSS- und JavaScript-Künste. 
-        </p>
+
+        <div class="description">
+            <h3>
+                Diese Website wurde als Projekt im Rahmen des Modul 293 von Melvin und Tristan erstellt.
+                Sie dient als ein Demonstration unserer HTML-, CSS- und JavaScript-Künste. 
+            </h3>
+        </div>
 
         <div class="aboutme">
             <img src="../public/images/pfp.jpg" class="portrait" alt="Avatar von Tristan">
@@ -33,6 +81,7 @@
                 </ul>
             </div> 
         </div>
+        </main>
 
     </body>
 </html>

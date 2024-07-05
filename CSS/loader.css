@@ -32,6 +32,13 @@ body {
     }
   }
 
+  .skeleton-loader-background {
+    width: 100%;
+    height: 15px;
+    display: block;
+    background: lightgray;       
+  }
+
   .div {
     background-color: red;
   }
